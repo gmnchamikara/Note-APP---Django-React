@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-//import Home from"./Pages/home";
+
 import Header from "./Components/Header";
 import NotesList from "./Pages/NotesList";
 import Note from "./Pages/Note";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<NotesList />} />
-          <Route path="/note/:id" element={<Note />} />
-        </Routes>
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<NotesList />} />
+            <Route path="/note/:id" element={<Note />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
 }
 
-export default App;
-
-//<Route path="/" element={<Home />} />;
+export default App; 
