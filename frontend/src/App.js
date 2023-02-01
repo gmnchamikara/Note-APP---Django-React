@@ -7,7 +7,7 @@ import Note from "./Pages/Note";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container dark">
       <Router>
         <div className="app">
           <Header />

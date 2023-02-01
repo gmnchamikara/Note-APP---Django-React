@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-const Note = ({ match }) => {
+const Note = () => {
   const { id } = useParams()
   let noteId = id
   let [note, setNote] = useState(null);
